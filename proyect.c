@@ -36,8 +36,20 @@ int main(){
     getchar();
     return 0;*/
 
-        
-
+    int numero1, numero2, numero3, numero4, suma, promedio;  
+    printf("Ingrese el primer numero");
+    scanf("%i", &numero1);
+    printf("Ingrese el segundo numero");
+    scanf("%i", &numero2);
+    printf("Ingrese el tercer numero");
+    scanf("%i", &numero3);
+    printf("Ingrese el cuarto numero");
+    scanf("%i", &numero4);
+    suma = numero1+numero2+numero3+numero4;
+    promedio = ((numero1+numero2+numero3+numero4)/4);
+    printf("La suma de los numero es de %i y el promedio de los numero es de %i",suma, promedio );
+    getchar();
+    return 0;
 
 
 }
