@@ -125,17 +125,141 @@ int main(){
 
 //--------------------------------------------------------------------------
 
-    int numero;
-    int longitud;
-    printf("Ingrese un numero");
-    scanf("%i, &numero");
-    longitud = sizeof(numero);
+    /*int numero1, numero2, numero3;
+    printf("Ingrese el primer numero");
+    scanf("%i", &numero1);
+    printf("Ingrese el segundo numero");
+    scanf("%i", &numero2);
+    printf("Ingrese el tercer numero");
+    scanf("%i", &numero3);
 
-    printf("%i", longitud);
+    if(numero1 > numero2 && numero1 > numero3){
+        printf("El numero mayor es el %i", numero1);
+    }else if(numero2 > numero3 && numero2 > numero1){
+        printf("El numero mayor es el numero %i", numero2);
+    }else{
+        printf("El numero mayor es el numero %i", numero3);
+    }*/
+
+//---------------------------------------------------------------------
+
+    /*int numero;
+    printf("Ingrese un numero");
+    scanf("%i", &numero);
+    if(numero > 0){
+        printf("El numero es positivo");
+    }else if(numero < 0){
+        printf("El numero es negativo");
+    }else{
+        printf("El numero es nulo");
+    }*/
+
+//------------------------------------------------------------------
+
+
+    /*int numero;
+    int contador;
+    printf("Ingrese un numero");
+    scanf("%i", &numero);
+    while(numero != 0){
+        numero = numero / 10;
+        contador++;
+    }
+    if(contador == 1){
+        printf("El numero tiene %i", contador);
+    }else if(contador == 2){
+        printf("El numero tiene %i", contador);
+    }else if(contador == 3){
+        printf("El numero tiene %i", contador);
+    }else{
+        printf("Error, Longitud demaciado larga");
+    }*/
+    //----------------------------------------------------------------
+
+    /*int totalPreguntas, totalPreguntasCorrectas;
+    int porcentaje;
+    printf("Ingrese el total de preguntas que realizo en el examen");
+    scanf("%i", &totalPreguntas);
+    printf("Ingrese el total de preguntas correctas");
+    scanf("%i", &totalPreguntasCorrectas);
+    porcentaje = ((totalPreguntasCorrectas * 100) / totalPreguntas);
+    if(porcentaje >= 90){
+        printf("Nivel máximo, porque su porcentaje es de:  %i", porcentaje);
+    }else if(porcentaje >= 75 && porcentaje < 90){
+        printf("Nivel medio porque su porcentaje es de %i", porcentaje);
+    }else if(porcentaje >= 50 && porcentaje < 75){
+        printf("Nivel regular porque su porcentaje es de %i", porcentaje);
+    }else{
+        printf("Fuerza, estudia mas!!!");
+    }*/
+
+    //----------------------------------------------------------------
+
+    /*int dia, mes, anio;
+    printf("Ingrese el dia");
+    scanf("%i", &dia);
+    printf("Ingrese el mes");
+    scanf("%i", &mes);
+    printf("Ingrese el año");
+    scanf("%i", &anio);
+    if (mes == 1 || mes == 2 || mes == 3){
+        printf("Hace parte al primer trimestre del año");
+    }else{
+        printf("No hace parte al primer trimestre del año");
+    }*/
+
+    //---------------------------------------------------------------
+
+    /*int dia, mes, anio;
+    printf("Ingrese el dia");
+    scanf("%i", &dia);
+    printf("Ingrese el mes");
+    scanf("%i", &mes);
+    printf("Ingrese el año");
+    scanf("%i", &anio);
+    if (dia == 25 || dia == 24){
+        if(mes == 12){
+            printf("En hora buena es navidad!!!");
+        }
+    }
+    printf("Sorry, faltan %i meses para que sea navidad", (12-mes));*/
+
+    //-----------------------------------------------------------
+
+    /*int numero1, numero2, numero3, suma;
+    printf("Ingrese el primer valor");
+    scanf("%i", &numero1);
+    printf("Ingrese el segundo valor");
+    scanf("%i", &numero2);
+    printf("Ingrese el tercer valor");
+    scanf("%i", &numero3);
+    if(numero1 == numero2){
+        suma = numero1 + numero2;
+        suma = suma * numero3;
+        printf("EL resultado es: %i", suma);
+    }else{
+        printf("Sigue intentando!!!");
+    }*/
+
+
+    //---------------------------------------------------------------
+
+   /* int numero1, numero2, numero3;
+    printf("Ingrese el primer valor");
+    scanf("%i", &numero1);
+    printf("Ingrese el segundo valor");
+    scanf("%i", &numero2);
+    printf("Ingrese el tercer valor");
+    scanf("%i", &numero3);
+    if(numero1 < 10 && numero2 < 10 && numero3 < 10){
+        printf("Todos los numeros ingresados son menores a Diez");
+    }else{
+        printf("Algunos numeros son mayores a Diez");
+    }*/
+    
+    
 
     getchar();
     return 0;
-
-
 
 }
