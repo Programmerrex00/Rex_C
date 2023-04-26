@@ -4,6 +4,7 @@
 
 int main(){
     
+   
  /*int horasTrabajadas;
     float costoHora;
     float sueldo;
@@ -304,21 +305,118 @@ int main(){
         printf("Su sueldo es de %f", sueldo);
     }*/
 
-    int numero1, numero2, numero3;
+    /*int numero1, numero2, numero3;
     printf("Ingrese el primer valor");
     scanf("%i", &numero1);
     printf("Ingrese el segundo valor");
     scanf("%i", &numero2);
     printf("Ingrese el tercer valor");
     scanf("%i", &numero3);
-    if(numero1 > numero2){
-        
+    if(numero1 < numero2 && numero1 < numero3){
+        printf("El numero menor es %i", numero1);
+    }else{
+        if(numero2 < numero3){
+            printf("EL numero menor el es numero %i", numero2);
+    }else{
+        printf("El numero menor es el numero %i", numero3) ;
     }
 
+    }
+
+    if(numero1 > numero2 && numero1 > numero3){
+        printf("El numero mayor es el %i", numero1);
+    }else{
+        if(numero2 > numero3){
+            printf("El numero mayor es el %i", numero2);
+    }else{
+        printf("El numero mayor es el %i", numero3);
+    }
+    }*/
+     
+    
+    /*int numero = 2;
+     while (numero <= 100){
+        printf("\n%i",numero);
+       numero+=2;
+     }
+   */
+
+    /*int numero, contador;
+    printf("Ingrese un numero");
+    scanf("%i", &numero);
+    while (contador <= numero)
+    {
+        printf("\n%i", contador);
+        contador++;
+    }*/
+
+    /*int value;
+    int suma, contador = 1;
+    while(contador <= 10){
+        printf("Ingrese el %i numero", contador);
+        scanf("%i", &value);
+        suma = suma + value; 
+        contador++;
+    }
+    printf("La suma de los valores es de %i ", suma);
+    printf("El promedio de los numeros ingresados es de %i", (suma/10));*/
+
+    //perfiles de hierro
+    //lote de N piesas
+
+    /*int contador = 1, cantidad, piezasComprendidas = 0;
+    float piezas;
+
+    printf("Ingrese la cantidad de piezas ");
+    scanf("%i", &cantidad);
+
+    while(contador <= cantidad){
+        printf("Ingrese la pieza numero %i \n", contador);
+        scanf("%f", &piezas);
+        if(piezas >= 1.20 && piezas <= 1.30){
+            piezasComprendidas++;
+        }
+        contador++;
+    }
+    printf("La cantidad de piezas que cumplen con la medidad es de %i", piezasComprendidas);*/
+
+
+    /*int notas = 10, contador = 1, notasMayores = 0, notasMenos = 0;
+    while(contador <= 10){
+        printf("Ingrese la nota %i\n", contador);
+        scanf("%i", &notas);
+        if(notas >= 7){
+            notasMayores++;
+        }else{
+            notasMenos++;
+        }
+        contador+=1;
+    }
+    printf("La cantidad de notas mayores o iguales a 7 es de %i\n", notasMayores);
+    printf("La cantidad de notas menores a 7 es de %i", notasMenos);*/
+
+    int contador = 1, cantidadPersonas;
+    float altura, suma;
+    printf("Ingrese la cantidad de personas");
+    scanf("%i", &cantidadPersonas);
+    while(contador <= cantidadPersonas){
+        printf("Ingrese la altura de la persona numero %i\n", contador);
+        scanf("%f", &altura);
+        suma+=altura;
+        contador++;
+    }
+
+    printf("El promedio de personas acorde a su altura es de %f", (suma/cantidadPersonas));
     
 
 
+
+
+
+ 
     getchar();
     return 0;
 
+
+    
 }
