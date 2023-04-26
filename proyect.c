@@ -1,5 +1,6 @@
 #include<conio.h>
 #include<stdio.h>
+#include<math.h>
 
 int main(){
     
@@ -257,7 +258,65 @@ int main(){
         printf("Algunos numeros son mayores a Diez");
     }*/
     
+    /*int numero1, numero2, numero3;
+    printf("Ingrese el primer valor");
+    scanf("%i", &numero1);
+    printf("Ingrese el segundo valor");
+    scanf("%i", &numero2);
+    printf("Ingrese el tercer valor");
+    scanf("%i", &numero3);
+    if(numero1 < 10 || numero2 < 10 || numero3 < 10){
+        printf("Alguno de los numero es menor a 10");
+    }else{
+        printf("Todos los numeros son mayores a 10");
+    }*/
+
+    /*int valorX, valorY;
+    printf("Ingrese el valor en X");
+    scanf("%i", &valorX);
+    printf("Ingrese el valor en Y");
+    scanf("%i", &valorY);
+    if(valorX > 0 && valorY > 0){
+        printf("Estas ubicado en el Primer cuadrante");
+    }else if(valorX < 0 && valorY > 0){
+        printf("Estas ubicado en el segundo cuadrante");
+    }else if(valorX < 0 && valorY < 0){
+        printf("Estas ubicado en el tercer cuadrante");
+    }else{
+        printf("Estas ubicado en el Cuarto cuadrante");
+    }*/
+
+
+    /*int antiguedad;
+    float sueldo;
+    int sueldoTotal;
+    printf("Ingrese los años trabajados en la empresa");
+    scanf("%i", &antiguedad);
+    printf("Ingrese el sueldo que gana actualmente");
+    scanf("%f", &sueldo);
+    if(sueldo < 500 && antiguedad >= 10){
+        sueldoTotal = round(sueldo + (sueldo*0.20)); 
+        printf("Su nuevo sueldo es de %d", sueldoTotal);
+    }else if(sueldo < 500 && antiguedad < 10){
+        sueldoTotal = sueldo + (sueldo * 0.05);
+        printf("Su nuevo sueldo es de %d", sueldoTotal);
+    }else{
+        printf("Su sueldo es de %f", sueldo);
+    }*/
+
+    int numero1, numero2, numero3;
+    printf("Ingrese el primer valor");
+    scanf("%i", &numero1);
+    printf("Ingrese el segundo valor");
+    scanf("%i", &numero2);
+    printf("Ingrese el tercer valor");
+    scanf("%i", &numero3);
+    if(numero1 > numero2){
+        
+    }
+
     
+
 
     getchar();
     return 0;
