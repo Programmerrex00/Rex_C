@@ -470,7 +470,7 @@ int main(){
         printf("Listas iguales");
     }*/
 
-    int numerosPares, numerosImpares = 0, contador  = 1, numeros, valores;
+    /*int numerosPares, numerosImpares = 0, contador  = 1, numeros, valores;
     printf("Ingrese la cantidad de numeros");
     scanf("%i", &numeros);
     while(contador <= numeros){
@@ -483,7 +483,17 @@ int main(){
         }
         contador++;
     }
-    printf("El total de numeos Pares es de %i y el total de numeros Impares es de %i ", numerosPares, numerosImpares);
+    printf("El total de numeos Pares es de %i y el total de numeros Impares es de %i ", numerosPares, numerosImpares);*/
+
+    /*for (int i = 1; i <= 100; i++){
+        printf("%i", i);
+        printf("\n");
+    }*/
+
+    
+
+
+    
 
 
 
