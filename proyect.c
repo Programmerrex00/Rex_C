@@ -395,7 +395,8 @@ int main(){
     printf("La cantidad de notas mayores o iguales a 7 es de %i\n", notasMayores);
     printf("La cantidad de notas menores a 7 es de %i", notasMenos);*/
 
-    int contador = 1, cantidadPersonas;
+    
+    /*int contador = 1, cantidadPersonas;
     float altura, suma;
     printf("Ingrese la cantidad de personas");
     scanf("%i", &cantidadPersonas);
@@ -406,14 +407,87 @@ int main(){
         contador++;
     }
 
-    printf("El promedio de personas acorde a su altura es de %f", (suma/cantidadPersonas));
-    
+    printf("El promedio de personas acorde a su altura es de %f", (suma/cantidadPersonas));*/
+
+   /* int empleados, sueldoMayorA300 = 0, sueldoEntre100Y300 = 0, contador = 1, gatosTotalEmpleados = 0, sueldo;
+    printf("Ingrese la cantidad de empleados");
+    scanf("%i", &empleados);
+    while(contador <= empleados){
+        printf("Ingrese el sueldo del empleado %i ", contador);
+        scanf("%i", &sueldo);
+        if(sueldo <= 300){
+            sueldoEntre100Y300++;
+        }else{
+            sueldoMayorA300++;
+        }
+        gatosTotalEmpleados +=sueldo;
+        contador++;
+    }  
+    printf("El numero de empleados que tienen un sueldo que de 100 y 300 es de %i personas \n ", sueldoEntre100Y300);
+    printf("El numero de empleados que tienen un sueldo mayor a 300 es de %i personas\n ", sueldoMayorA300);
+    printf("El importe que gasta la empresa en sueldos de empleados es de %i ", gatosTotalEmpleados);*/
+
+
+   /*int contador = 1, value = 11;
+    while(contador <= 25){
+        printf("%i", value);
+        printf("\n");
+        value += 11;
+        contador++;
+    }*/
+
+/*
+    int tabla = 8, contador = 1;
+    while(contador <= 500){
+        contador++;
+        printf("%i",tabla);
+        printf("\n");
+        tabla = 8 * contador;
+    }*/
+
+
+   /* int contador = 1, valores1, valores2;
+    int sumaPrimeraLista, sumaSegundaLista;
+    while(contador <= 15){
+        printf("Ingrese el %i valor para la Primera lista", contador);
+        scanf("%i", &valores1);
+        sumaPrimeraLista += valores1;
+        contador++;
+    }
+    contador = 1;
+    printf("\n");
+    while(contador <= 15){
+        printf("Ingrese el %i valore para la segunda lista", contador);
+        scanf("%i", &valores2);
+        sumaSegundaLista += valores2;
+        contador++;
+    }
+    if(sumaPrimeraLista > sumaSegundaLista){
+        printf("Lista 1 mayor");
+    }else if(sumaSegundaLista > sumaPrimeraLista){
+        printf("Lista 2 mayor");
+    }else{
+        printf("Listas iguales");
+    }*/
+
+    int numerosPares, numerosImpares = 0, contador  = 1, numeros, valores;
+    printf("Ingrese la cantidad de numeros");
+    scanf("%i", &numeros);
+    while(contador <= numeros){
+        printf("Ingrese el %i numero ", contador );
+        scanf("%i", &valores);
+        if(valores%2 == 0){
+            numerosPares++;
+        }else{
+            numerosImpares++;
+        }
+        contador++;
+    }
+    printf("El total de numeos Pares es de %i y el total de numeros Impares es de %i ", numerosPares, numerosImpares);
 
 
 
 
-
- 
     getchar();
     return 0;
 
