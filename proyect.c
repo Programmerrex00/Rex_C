@@ -490,9 +490,144 @@ int main(){
         printf("\n");
     }*/
 
+    /*int valores, acumulador = 0;
+    for(int i = 0; i < 10;i++){
+        printf("Ingrese el %i numero", i+1);
+        scanf("%i", &valores);
+        acumulador += valores;
+    }
+    printf("La suma de los valores ingresados es %i y el promedio es de %i", acumulador, acumulador/10);*/
+
+
+   /*int notas, aprobados = 0, reprobados = 0;
+    for(int i = 0; i < 10 ;i++){
+        printf("Ingrese la nota del alumno %i", i+1);
+        printf("\n");
+        scanf("%i", &notas);
+        if(notas >= 7){
+            aprobados++;
+        }else{
+            reprobados++;
+        }
+    }
+    printf("El total de alumnos aprobados es de %i y el total de alumos reprobados %i ", aprobados, reprobados);*/
+
+    /*int numeros, multiplosCinco = 0, multiplosTres = 0;
+    for(int i = 0; i < 10 ; i++){
+        printf("Ingrese el %i numero", i+1);
+        scanf("%i", &numeros);
+        if(numeros%3 == 0){
+            multiplosTres++;
+        }
+        if(numeros%5 == 0){
+            multiplosCinco++;
+        }
+    }
+    printf("Los numeros multiplos de 5 son %i, y los multiplos de 3 son %i", multiplosCinco, multiplosTres);*/
+
+    /*int valores, contador = 0, cantidad;
+    printf("Ingrese la cantidad de valores");
+    scanf("%i", &cantidad);
+    for (int i = 0; i < cantidad; i++){
+        printf("Ingrese el valor %i", i+1);
+        scanf("%i", &valores);
+        if(valores >= 1000){
+            contador++;
+        }
+    }
+    printf("La cantidad de valores mayores o iguales a 100 es de %i", contador);*/
     
+    /*int cantidad, base, altura, resultadoSuperficie, contador = 0;
+    printf("Ingrese la cantidad de triangulos");
+    scanf("%i", &cantidad);
+    for(int i = 0; i < cantidad ;i++){
+        printf("Ingrese la base del %i triangulo ", i+1);
+        scanf("%i", &base);
+        printf("\n");
+        printf("Ingrese la altura del %i triangulo ", i+1);
+        scanf("%i", &altura);
+        printf("\n");
+        resultadoSuperficie = (base * altura )/2;
+        if(resultadoSuperficie > 12){
+            contador++;
+        }
+    }
+    printf("La cantidad de triangulos con superficie mayor a 12 es de %i ", contador);*/
 
 
+
+   /* int numeros, suma = 0;
+    for (int i = 0; i < 10; i++){
+        printf("Ingrese el %i numero", i+1);
+        printf("\n");
+        scanf("%i", &numeros);
+        if(i > 4){
+            suma+=numeros;
+        }
+    }
+    printf("La suma de los 5 ultimos numeros es de %i", suma);*/
+
+    /*int tabla = 5, multiplicacion = 5;
+    for(int i = 1; i <= 10 ;i++){
+        multiplicacion = tabla * i;
+        printf("%i X %i = %i", tabla, i, multiplicacion);
+        printf("\n");
+        
+    }*/
+
+    /*int tabla, multiplicacion = 0;
+    printf("Ingrese un numero rango (1-10)");
+    scanf("%i", &tabla);
+    for(int i = 1; i <= 12 ;i++){
+        multiplicacion = tabla * i;
+        printf("%i X %i = %i", tabla, i, multiplicacion);
+        printf("\n");
+    }*/
+
+   /* int contadorEquilatero = 0, contadorIsosceles = 0, contadorEscaleno = 0, cantidad;
+    int lado1, lado2, lado3;
+    printf("Ingrese la cantidad de triangulos");
+    scanf("%i", &cantidad);
+    for (int i = 0; i < cantidad; i++){
+        printf("\n");
+        printf("Ingrese los datos para el %i triangulo", i+1);
+        printf("\n");
+        printf("Ingrese el primer lado");
+        scanf("%i", &lado1);
+        printf("\n");
+        printf("Ingrese el segundo lado");
+        scanf("%i", &lado2);
+        printf("\n");
+        printf("Ingrese el tercer lado");
+        scanf("%i", &lado3);
+        printf("\n");
+        if(lado1 == lado2 && lado1 == lado3){
+            printf("\n");
+            printf("El triangulo es Equilatero");
+            contadorEquilatero++;
+        }else if(lado1 == lado2 || lado1 == lado3 || lado2 == lado3){
+            printf("\n");
+            printf("El triangulo es Isosceles");
+            contadorIsosceles++;
+        }else{
+            printf("\n");
+            printf("El triangulo es Escaleno");
+            contadorEscaleno++;
+        }
+    }
+
+    printf("La cantidad de triangulos Equilateros es de %i \n La cantidad de triangulos Isosceles es de %i \n La cantidad de triangulos Escalenos es de %i ", contadorEquilatero, contadorIsosceles, contadorEscaleno);
+      printf("\n");
+       if(contadorEquilatero < contadorIsosceles && contadorEquilatero < contadorEscaleno){
+        printf("El triangulo con menor cantidad es Equilatero");
+    }else if(contadorIsosceles < contadorEscaleno){
+        printf("El triangulo con menor cantidad es Isosceles");
+    }else{
+        printf("El triangulo con menor cantidad es Escaleno");
+    }*/
+
+    
+    
     
 
 
