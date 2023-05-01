@@ -725,7 +725,56 @@ int main(){
         }else{
             printf("El menor promedio es de los estudiantes de la noche con %i", promedio3);
     }*/
+
+    /*int valor,contador = 0;
+    printf("Ingrese un valor");
+    scanf("%i", &valor);
+    do
+    {
+        valor /= 10;
+        contador++;
+    } while (valor != 0);
+    printf("La cantidad de dijitos que tiene el numero es de: %i", contador);*/
+
+   /*int valores, suma = 0, contador = 0;
+    do
+    {
+        printf("Ingrese un valor");
+        scanf("%i", &valores);
+        suma+= valores;
+        contador++;
+        if(valores == 0){
+            contador--;
+            suma /= contador;
+        }
+    } while (valores != 0);
+    printf("El promedio de los  %i numeros ingresados es de %i",contador, suma);*/
     
+    /*float piezas;
+    int contadorPiezas = 0, piezasEntreNueveYDiez = 0, piezasMayoresADiez = 0, piezasMenoresANueve = 0;
+    do
+    {
+        printf("Ingrese el peso de la Pieza");
+        scanf("%f", &piezas);
+        contadorPiezas++;
+        if(piezas >= 9.8 && piezas <= 10.2){
+            piezasEntreNueveYDiez++;
+        }else if(piezas > 10.2){
+            piezasMayoresADiez++;
+        }else{
+            piezasMenoresANueve++;
+        }
+    } while (piezas != 0);
+    printf("\n");
+    printf("Las piezas que tienen un peso entre 9.8 Kg. y 10.2 Kg son %i",piezasEntreNueveYDiez);
+    printf("\n");
+    printf("Las piezas que tienen un peso mayor a 10.2 Kg son %i",piezasMayoresADiez);
+    printf("\n");
+    printf("Las piezas que tienen un peso menor 9.8 Kg son %i",piezasMenoresANueve-1);
+    printf("\n");
+    printf("La cantidad de piezas procesadas es de %i", contadorPiezas-1);*/
+    
+
 
     
 
