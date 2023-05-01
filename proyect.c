@@ -626,8 +626,109 @@ int main(){
         printf("El triangulo con menor cantidad es Escaleno");
     }*/
 
+    /*int cantidad, coorX, coorY, primerCuadrante = 0, segundoCuadrante = 0, tercerCuadrante = 0, cuartoCuadrante = 0;
+    printf("Ingrese la cantidad de puntos");
+    scanf("%i", &cantidad);
+    for (int i = 0; i < cantidad; i++){
+        printf("\n");
+        printf("Ingrese el valor en X de la %i coordenada", i+1);
+        scanf("%i", &coorX);
+        printf("\n");
+        printf("Ingrese el valor en Y de la %i coordenada", i+1);
+        scanf("%i", &coorY);
+        printf("\n");
+        if(coorX > 0 && coorY > 0){
+            primerCuadrante++;
+        }else if(coorX < 0 && coorY > 0){
+            segundoCuadrante++;
+        }else if(coorX < 0 && coorY < 0){
+            tercerCuadrante++;
+        }else{
+            cuartoCuadrante++;
+        }
+    }
+    printf("La cantidad de puntos en el primer cuadrante es de: %i", primerCuadrante);
+    printf("\n");
+    printf("La cantidad de puntos en el segundo cuadrante es de: %i", segundoCuadrante);
+    printf("\n");
+    printf("La cantidad de puntos en el tercer cuadrante es de: %i", tercerCuadrante);
+    printf("\n");
+    printf("La cantidad de puntos en el cuarto cuadrante es de: %i", cuartoCuadrante);*/
     
+    /*int valores, numNegativos = 0, numPositivos = 0, multiplosDeQuince = 0, sumaPares = 0;
+    for (int i = 0; i < 10; i++){
+        printf("Ingrese el %i numero \t", i+1);
+        scanf("%i", &valores);
+        if(valores < 0){
+            numNegativos++;
+        }
+        if (valores > 0){
+            numPositivos++;
+        }
+        if(valores%15 == 0){
+            multiplosDeQuince++;
+        }
+        if (valores%2 == 0){
+            sumaPares += valores;
+        }
+    }
+    printf("La cantidad de numeros negativos es de: %i", numNegativos);
+    printf("\n");
+    printf("La cantidad de numeros positivos es de: %i", numPositivos);
+    printf("\n");
+    printf("La cantidad de multiplos de 15 es de: %i", multiplosDeQuince);
+    printf("\n");
+    printf("La suma de numeros pares es de: %i", sumaPares);*/
     
+
+
+   /*int edadesDeLaManana, edadesDeLaTarde, edadesDeLaNoche, inicio = 5, reguladorDatos = 0;
+    int promedio1 = 0, promedio2 = 0, promedio3 = 0, i;
+    for ( i = 1; i <= inicio; i++){
+        if(reguladorDatos == 0){
+            printf("\n");
+            printf("Ingrese la edad para el estudiante del turno de la manana \t");
+            scanf("%i", &edadesDeLaManana);
+            promedio1 += edadesDeLaManana;
+        }else if (reguladorDatos == 1){
+            printf("\n");
+            printf("Ingrese la edad para el estudiante del turno de la tarde \t");
+            scanf("%i", &edadesDeLaTarde);
+            promedio2 += edadesDeLaTarde;
+        }else{
+            printf("\n");
+            printf("Ingrese la edad  para el estudiante del turno de la noche \t");
+            scanf("%i", &edadesDeLaNoche);
+            promedio3 += edadesDeLaNoche;
+        }
+        if(i == 5){
+            inicio = 11;
+            reguladorDatos++;
+        }else if(i  == 11){
+            inicio = 22;
+            reguladorDatos++;
+        }
+    }
+    promedio1 /= 5;
+    promedio2 /= 6;
+    promedio3 /= 11;
+    printf("El promedio de edades de estudiantes de la manana es de: %i", promedio1);
+    printf("\n");
+    printf("El promedio de edades de estudiantes de la tarde es de: %i", promedio2);
+    printf("\n");
+    printf("El promedio de edades de estudiantes de la noche es de: %i", promedio3);
+    printf("\n");
+    if(promedio1 < promedio2 && promedio1 < promedio3){
+        printf("El menor promedio es de los estudiantes de la manana con %i", promedio1);
+    }else if(promedio2 < promedio3){
+            printf("El menor promedio es de los estudiantes de la tarde con %i", promedio2);
+        }else{
+            printf("El menor promedio es de los estudiantes de la noche con %i", promedio3);
+    }*/
+    
+
+    
+
     
 
 
