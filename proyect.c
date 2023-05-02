@@ -798,6 +798,45 @@ int main(){
         printf("El valor ingresado es menor a 0");
     }*/
 
+
+   /* float suma = 0, saldoDeLaCuenta;
+    int numeroCuenta;
+    do{
+        printf("Ingrese el numero de la cuenta (Menor a 0 para salir)");
+        scanf("%i", &numeroCuenta);
+        printf("\n");
+        if(numeroCuenta >= 0){
+     printf("Ingrese el saldo de la cuenta");
+        scanf("%f", &saldoDeLaCuenta);
+        printf("\n");
+        if(saldoDeLaCuenta > 0){
+            printf("Acreedor");
+            suma += saldoDeLaCuenta;
+            printf("\n");
+        }else if(saldoDeLaCuenta < 0){
+            printf("Deudor");
+            printf("\n");
+        }else{
+            printf("Nulo");
+             printf("\n");
+        }
+        }
+    } while (numeroCuenta >= 0 );
+    printf("\n");
+    printf("La suma total de los saldos de los acreedores es de %0.2f", suma);*/
+
+    /*int sueldos[5];
+    for (int i = 0; i < 5; i++){
+        printf("Ingrese el %i sueldo del empleado", i+1);
+        scanf("%i", &sueldos[i]);
+    }
+    printf("Listado de sueldos");
+    printf("\n");
+    for (int j = 0; j < 5; j++){
+        printf("%i", sueldos[j]);
+        printf("\n");
+    }*/
+    
     
     
 
