@@ -750,6 +750,7 @@ int main(){
     } while (valores != 0);
     printf("El promedio de los  %i numeros ingresados es de %i",contador, suma);*/
     
+    
     /*float piezas;
     int contadorPiezas = 0, piezasEntreNueveYDiez = 0, piezasMayoresADiez = 0, piezasMenoresANueve = 0;
     do
@@ -773,9 +774,31 @@ int main(){
     printf("Las piezas que tienen un peso menor 9.8 Kg son %i",piezasMenoresANueve-1);
     printf("\n");
     printf("La cantidad de piezas procesadas es de %i", contadorPiezas-1);*/
+
+
+    /*int suma = 0, valores;
+    do
+    {
+        printf("Ingrese un valor");
+        scanf("%i", &valores);
+        if(valores != 9999){
+            suma += valores;
+        }else{
+            printf("Ha finalizado la carga de los numeros");
+            printf("\n");
+        }
+    } while (valores != 9999);
+    printf("La suma de los valores ingresados es de %i", suma);
+    printf("\n");
+    if(suma == 0){
+        printf("El valor total es 0");
+    }else if(suma > 0){
+        printf("El valore ingresado es mayor a 0");
+    }else{
+        printf("El valor ingresado es menor a 0");
+    }*/
+
     
-
-
     
 
     
