@@ -896,7 +896,34 @@ int main(){
     printf("\n");
     printf("La cantidad de valores mayores a 50 son de %i", cantidadDeValoresMayor50);*/
     
-
+    /*int oneVector[4], twoVector[4], threeVector[4], limite = 4, decrementador = 0;
+    for (int i = 0; i < limite; i++){
+        if(i < 4){
+        printf("Ingrese el valor %i para la primera lista", i+1);
+        scanf("%i", &oneVector[i]);
+        printf("\n");
+        }
+        if(i == 3 || i > 3){
+            limite = 7;
+        printf("Ingrese el valor %i para la segunda lista", decrementador+1);
+        scanf("%i", &twoVector[decrementador]);
+        decrementador++;
+        printf("\n");
+        }
+    }
+    for (int j = 0; j < 4; j++){
+        threeVector[j] = oneVector[j] + twoVector[j];
+    }
+    printf("\n");
+    printf("El vector resultante es: ");
+    printf("\n");
+    for (int r = 0; r < 4; r++){
+        printf("%i",threeVector[r]);
+        printf("\n");
+    }*/
+    
+    
+    
     
 
     
