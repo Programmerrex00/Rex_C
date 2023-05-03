@@ -986,7 +986,7 @@ int main(){
     printf("\n");
     printf("%c", valor3);*/
 
-    int valores, suma = 0;
+    /*int valores, suma = 0;
     char eleccion = 's';
     do
     {
@@ -996,12 +996,58 @@ int main(){
         printf("Quiere seguir ingresando datos (s/n)");
         scanf(" %c", &eleccion);
     } while (eleccion == 's'|| eleccion == 'S');
-    
+    printf("\n");
+    printf("La suma de los valores es %i", suma);*/
 
 
-    
 
-     
+    /*char abecedario ;
+    for ( abecedario = 65; abecedario <= 'z'; abecedario++){
+        printf(" %c-", abecedario);
+    }
+    printf("\n");
+    for ( abecedario = 'A'; abecedario <= 'Z'; abecedario++){
+        printf(" %c-", abecedario);
+    }*/
+
+    /*int valorOne, valorTwo;
+    char caracteresArigmeticos;
+    printf("Ingrese el primer valor \t");
+    scanf("%i", &valorOne);
+    printf("Ingrese el segundo valor \t");
+    scanf("%i", &valorTwo);
+    printf("\n");
+    printf("Que operacion quiere realizar con estos dos numeros (+)(-)(*)(/)");
+    scanf(" %c", &caracteresArigmeticos);
+    printf("\n");
+    if(caracteresArigmeticos == '+'){
+        printf("La suma es: %i", (valorOne+valorTwo));
+    }else if(caracteresArigmeticos == '-'){
+        printf("La resta es: %i", (valorOne-valorTwo));
+    }else if(caracteresArigmeticos == '*'){
+        printf("La multiplicacion es: %i", (valorOne*valorTwo));
+    }else{
+        printf("La division es: %i", (valorOne/valorTwo));
+    }*/
+
+    /*int edadPersonaOne, edadPersonaTwo;
+    char sexoOne, sexoTwo;
+    printf("Ingrese la edad de la primera persona \t");
+    scanf("%i", &edadPersonaOne);
+    printf("Ingrese el genero de la primera persona (f/m)\t");
+    scanf(" %c", &sexoOne);
+    printf("\n");
+    printf("Ingrese la edad de la segunda persona \t");
+    scanf("%i", &edadPersonaTwo);
+    printf("Ingrese el genero de la segunda persona (f/m)\t");
+    scanf(" %c", &sexoTwo);
+    printf("\n");
+    if(edadPersonaOne > edadPersonaTwo){
+        printf("La primera persona es mayor con %i anios y genero %c ", edadPersonaOne, sexoOne);
+    }else{
+        printf("La segunda persona es mayor con %i anios y genero %c ", edadPersonaTwo, sexoTwo);
+    }*/
+
 
     
 
