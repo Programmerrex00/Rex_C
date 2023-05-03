@@ -923,7 +923,86 @@ int main(){
     }*/
     
     
+    /*float cursoA[5], cursoB[5], promedioCursoA = 0, promedioCursoB = 0;
+    int  limite = 5, decrementador = 0;
+    for (int i = 0; i < limite; i++){
+        if(i < 5){
+        printf("Ingrese la nota %i del estudiante del grupo A \t", i+1);
+        scanf("%f", &cursoA[i]);
+        printf("\n");
+        promedioCursoA += cursoA[i];
+        }
+        if(i == 4 || i > 4){
+            limite = 9;
+        printf("Ingrese la nota %i del estudiante del grupo B \t", decrementador+1);
+        scanf("%f", &cursoB[decrementador]);
+        promedioCursoB += cursoB[decrementador];
+        decrementador++;
+        printf("\n");
+        }
+    }
+    promedioCursoA /= 5;
+    promedioCursoB /= 5;
+    printf("\n");
+    if(promedioCursoA > promedioCursoB){
+        printf("El mayor promedio lo obtuvo el curso A con %0.1f", promedioCursoA);
+    }else{
+        printf("El mayor promedio lo obtuvo el curso B con %0.1f", promedioCursoB);
+    }*/
+
+
+    /*int array[10], acumulador = 0;
+    for (int i = 0; i < 10; i++){
+        printf("Ingrese el %i valor de el vector", i);
+        scanf("%i", &array[i]);
+        printf("\n");
+    }
+    //Metodo de la burbuja
+    for (int i = 0; i < 9; i++){
+        for (int j = 0; j < 9; j++){
+            if(array[j+1]< array[j]){
+                acumulador = array[j+1];
+                array[j+1] = array[j];
+                array[j] = acumulador;
+            }
+        }
+    }
+
+    for (int i = 0; i < 10; i++){
+        printf("%i", array[i]);
+        printf("\n");
+    }*/
     
+    /*char valor1 = 45;  
+    char valor2 = 'H';
+    char valor3;
+    printf("Ingrese el valor para la variable Char");
+    scanf(" %c", &valor3);
+    printf("Los valores ingresados son: ");
+    printf("\n");
+    printf("%c", valor1);
+    printf("\n");
+    printf("%c", valor2);
+    printf("\n");
+    printf("%c", valor3);*/
+
+    int valores, suma = 0;
+    char eleccion = 's';
+    do
+    {
+        printf("Ingrese un valor");
+        scanf("%i", &valores);
+        suma += valores;
+        printf("Quiere seguir ingresando datos (s/n)");
+        scanf(" %c", &eleccion);
+    } while (eleccion == 's'|| eleccion == 'S');
+    
+
+
+    
+
+     
+
     
 
     
