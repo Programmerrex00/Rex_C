@@ -838,6 +838,65 @@ int main(){
     }*/
     
     
+    /*float alturas[5], suma = 0;
+    int  mayorAlPromedio = 0, menorAlPromedio = 0;
+    for (int i = 0; i < 5; i++){
+        printf("Ingrese la altura de la %i persona", i+1);
+        scanf("%f", &alturas[i]);
+        suma += alturas[i];
+        printf("\n");
+    }
+    suma /= 5;
+    for (int j = 0; j < 5; j++){
+        if(alturas[j] > suma){
+            mayorAlPromedio++;
+        }else{
+            menorAlPromedio++;
+        }
+    }
+    printf("El promedio total de las cinco personas es de %0.1f ", suma);
+    printf("\n");
+    printf("La cantidad de personas con altura mayor al promedio es de %i ", mayorAlPromedio);
+    printf("\n");
+    printf("La cantidad de personas con altura menor al promedio es de %i ", menorAlPromedio);*/
+    
+    /*float sueldoManana[4], sueldoTarde[4], totalManana = 0, totalTarde = 0;
+    for (int i = 0; i < 4; i++){
+        printf("Ingrese el sueldo del %i empleado del turno de la Manana", i+1);
+        scanf("%f", &sueldoManana[i]);
+        printf("\n");
+        printf("Ingrese el sueldo del %i empleado del turno de la Tarde", i+1);
+        scanf("%f", &sueldoTarde[i]);
+        printf("\n");
+        totalManana += sueldoManana[i];
+        totalTarde += sueldoTarde[i];
+    }
+    printf("\n");
+    printf("El total de gatos de turno de la manana es de %0.2f", totalManana);
+    printf("\n");
+    printf("El total de gatos de turno de la tarde es de %0.2f", totalTarde);*/
+
+
+    /*int valores[8], suma = 0, acumuladoMayorA36 = 0, cantidadDeValoresMayor50 = 0;
+    for (int i = 0; i < 8; i++){
+        printf("Ingrese el %i valor de la lista", i+1);
+        scanf("%i", &valores[i]);
+        suma += valores[i];
+        if(valores[i] > 36){
+            acumuladoMayorA36 += valores[i];
+        }
+        if (valores[i] > 50){
+            cantidadDeValoresMayor50++;
+        }
+    }
+    printf("\n");
+    printf("La suma total de los valores ingresados es de %i", suma);
+    printf("\n");
+    printf("El acumulado de los valores mayores a 36 es de %i", acumuladoMayorA36);
+    printf("\n");
+    printf("La cantidad de valores mayores a 50 son de %i", cantidadDeValoresMayor50);*/
+    
+
     
 
     
