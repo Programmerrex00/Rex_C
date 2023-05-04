@@ -1148,25 +1148,39 @@ int main(){
     int longitud = strlen(palabra);
     printf("La longitud de la palabra es de %i", longitud);*/
 
-    char primerNombre[31];
+    /*char primerNombre[31];
     char segundoNombre[31];
-
     printf("Ingrese el primer nombre");
     gets(primerNombre);
     printf("\n");
+
     printf("Ingrese el segundo nombre");
     gets(segundoNombre);
     printf("\n");
-    int valor = strcmp(primerNombre, segundoNombre);
-    if(valor == 0){
+
+    if(strcmp(primerNombre, segundoNombre) == 0){
         printf("Los nombres tienen la misma longitud de caracteres");
-    }else if(valor > 0){
-        printf("El primer nombre tiene mas caracteres que el segundo nombre");
+    }else if(strcmp(primerNombre, segundoNombre) > 0){
+        printf("%s tiene mas caracteres", primerNombre);
     }else{
-        printf("El segundo nombre tiene mas caracteres que el primer nombre");
+        printf("%s tiene mas caracteres", segundoNombre);
+    }*/
+
+    /*char personaOne[31];
+    char personaTwo[31];
+    char personaResultante[31];
+    printf("Ingrese el nombre de la primera persona \t");
+    gets(personaOne);
+    printf("Ingrese el nombre de la segudnda persona \t");
+    gets(personaTwo);
+    if(strlen(personaOne) > strlen(personaTwo)){
+        strcpy(personaResultante, personaOne);
+    }else{
+        strcpy(personaResultante, personaTwo);
     }
-    
-    
+    printf("%s", personaResultante);*/
+
+
 
 
     getchar();
