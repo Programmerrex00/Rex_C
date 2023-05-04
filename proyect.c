@@ -1182,6 +1182,25 @@ int main(){
 
 
 
+    //para dejar un espacio poder utilizar la funcion strcpy(cadena, "")
+
+    /*char nombre[31];
+    char apellido[31];
+    char concatenacion[31];
+    printf("Ingrese el nombre de la persona \t");
+    gets(nombre);
+    printf("Ingrese el apellido de la persona \t");
+    gets(apellido);
+    strcpy(concatenacion,nombre);
+    strcat(concatenacion," ");
+    strcat(concatenacion, apellido);
+    printf("\n");
+    printf("El nombre concatenado es: %s", concatenacion);*/
+
+
+
+
+
 
     getchar();
     return 0;
