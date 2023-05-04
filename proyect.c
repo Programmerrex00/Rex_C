@@ -1049,11 +1049,98 @@ int main(){
     }*/
 
 
+    /*char nombreProgrammer[15] = "Maicol Cubides";
+    printf("%s", nombreProgrammer);*/
+
+    /*char nombrePrimeraPersona[21];
+    char nombreSegundaPersona[21];
+    int primeraEdad, segundaEdad;
+    printf("Ingrese el Nombre de la primera persona \t");
+    gets(nombrePrimeraPersona);
+     printf("Ingrese al edad de la primera persona \t");
+    scanf("%i", &primeraEdad);
+    printf("\n");
+    fflush(stdin); 
+    printf("Ingrese el Nombre de la segunda persona \t");
+    gets(nombreSegundaPersona);
+    printf("Ingrese al edad de la segunda persona \t");
+    scanf("%i", &segundaEdad);
+    printf("\n");
+    if(primeraEdad > segundaEdad){
+        printf("La persona %s tiene mas edad con %i anios", nombrePrimeraPersona, primeraEdad);
+    }else{
+        printf("La persona %s tiene mas edad con %i anios", nombreSegundaPersona, segundaEdad);
+    }*/
+
+
+    /*char palabra[30];
+    int contadorVocales = 0, x = 0;
+    printf("Ingrese una palabra \t");
+    gets(palabra);
+   
+    while (palabra[x]!='\0'){
+        if(palabra[x] == 'a' || palabra[x] == 'e' || palabra[x] == 'i' || palabra[x] == 'o' || palabra[x] == 'u'){
+            contadorVocales++;
+        }
+        x++;
+    }
+    printf("La cantidad de vocales que tiene la palabra %s es de %i", palabra, contadorVocales);*/
+
+    /*char palabra[30];
+    int contador = 0, x = 0;
+    printf("Ingrese una palabra"); 
+    gets(palabra);
+    printf("\n");
+    while (palabra[x]!='\0'){
+        contador++;
+        x++;
+    }
+    printf("La cantidad de caracteres que conforman la palabra %s es de %i", palabra, contador);*/
+
+
+
+    /*char oracion[200];
+    int contadorPalabras = 1, x = 0;
+    printf("Ingrese la oracion");
+    gets(oracion);
+    printf("\n");
+    while (oracion[x] != '\0'){
+        if(oracion[x] != ' ' && oracion[x+1] == ' '){
+            contadorPalabras++;
+        }
+        x++;
+    }
+    if(oracion[0] == '\0'){
+        contadorPalabras = 0;
+    }
+    printf("La oracion %s tiene %i palabras", oracion, contadorPalabras);*/
     
+    /*char palabra[20];
+    printf("Ingrese una palabra \t");
+    gets(palabra);
+    printf("\n");
+    if(palabra[0] == 'a'){
+        printf("La palabra %s comienza con la vocal a", palabra);
+    }else if(palabra[0] == 'A'){
+        printf("La palabra %s comienza con la vocal A", palabra);
+    }else{
+        printf("La palabra %s comienza con la vocal %c", palabra, palabra[0]);
+    }*/
 
+    char palabra[30];
+    int x = 0;
+    printf("Ingrese una palabra");
+    gets(palabra);
+    printf("\n");
+    while (palabra[x] != '\0'){
+        if(palabra[x] == 'a' || palabra[x] == 'e' || palabra[x] == 'i' || palabra[x] == 'o' || palabra[x] == 'u'){
+            palabra[x] = '-';
+        }
+        x++;
+    }
+    printf("%s", palabra);
     
-
-
+    
 
 
     getchar();
