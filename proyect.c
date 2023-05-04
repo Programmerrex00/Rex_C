@@ -1,6 +1,7 @@
 #include<conio.h>
 #include<stdio.h>
 #include<math.h>
+#include<string.h>
 
 int main(){
     
@@ -1127,7 +1128,7 @@ int main(){
         printf("La palabra %s comienza con la vocal %c", palabra, palabra[0]);
     }*/
 
-    char palabra[30];
+    /*char palabra[30];
     int x = 0;
     printf("Ingrese una palabra");
     gets(palabra);
@@ -1138,7 +1139,32 @@ int main(){
         }
         x++;
     }
-    printf("%s", palabra);
+    printf("%s", palabra);*/
+
+    /*char palabra[30];
+    printf("Ingrese una palabra");
+    gets(palabra);
+    printf("\n");
+    int longitud = strlen(palabra);
+    printf("La longitud de la palabra es de %i", longitud);*/
+
+    char primerNombre[31];
+    char segundoNombre[31];
+
+    printf("Ingrese el primer nombre");
+    gets(primerNombre);
+    printf("\n");
+    printf("Ingrese el segundo nombre");
+    gets(segundoNombre);
+    printf("\n");
+    int valor = strcmp(primerNombre, segundoNombre);
+    if(valor == 0){
+        printf("Los nombres tienen la misma longitud de caracteres");
+    }else if(valor > 0){
+        printf("El primer nombre tiene mas caracteres que el segundo nombre");
+    }else{
+        printf("El segundo nombre tiene mas caracteres que el primer nombre");
+    }
     
     
 
