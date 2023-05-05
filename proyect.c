@@ -1197,10 +1197,117 @@ int main(){
     printf("\n");
     printf("El nombre concatenado es: %s", concatenacion);*/
 
+    /*char parteClaveOne[31];
+    char parteClaveTwo[31];
+    char concatenarString[62];
+    printf("Ingrese la primera parte de la clave");
+    gets(parteClaveOne);
+    printf("\n");
+    printf("Ingrese la segunda parte de la clave");
+    gets(parteClaveTwo);
+    printf("\n");
+    strcpy(concatenarString,parteClaveOne);
+    strcat(concatenarString,parteClaveTwo);
+    if(strcmp(concatenarString,"abc123") == 0){
+        printf("Correcto");
+    }else{
+        printf("Clave Incorrecta");
+    }*/
+
+    /*char nombreOne[31];
+    char nombreTwo[31];
+    printf("Ingrese el primer nombre");
+    gets(nombreOne);
+    printf("\n");
+    printf("Ingrese el segundo nombre");
+    gets(nombreTwo);
+    printf("\n");
+    if(strcmp(nombreOne,nombreTwo) == 0){
+        printf("Los nombres son iguales");
+    }else if(strcmp(nombreOne, nombreTwo) > 0){
+    printf("%s", nombreTwo);
+    printf("\n");
+    printf("%s", nombreOne);
+    }else{
+        printf("%s", nombreTwo);
+        printf("\n");
+        printf("%s", nombreOne);
+    }*/
+
+    /*char primerNombre[31];
+    char segundoNombre[31];
+    printf("Ingrese el primer nombre");
+    gets(primerNombre);
+    printf("\n");
+    printf("Ingrese el segundo nombre");
+    gets(segundoNombre);
+    if(strlen(primerNombre) > strlen(segundoNombre)){
+    printf("%s\n%s", primerNombre,segundoNombre);
+    }else if(strlen(segundoNombre) > strlen(primerNombre)){
+    printf("%s\n%s", segundoNombre,primerNombre);
+    }*/
+
+    /*char primerNombre[31], segundoNombre[31], tercerNombre[31];
+    char concatenacionNombres[93];
+    printf("Ingrese el primer nombre");
+    gets(primerNombre);
+    printf("\n");
+    printf("Ingrese el segundo nombre");
+    gets(segundoNombre);
+    printf("\n");
+    printf("Ingrese el tercer nombre");
+    gets(tercerNombre);
+    printf("\n");
+    if(strcmp(primerNombre, segundoNombre) > 0 && strcmp(primerNombre, tercerNombre) > 0 && strcmp(segundoNombre, tercerNombre) > 0){
+        strcpy(concatenacionNombres, tercerNombre);
+        strcat(concatenacionNombres, ",");
+        strcat(concatenacionNombres,segundoNombre);
+        strcat(concatenacionNombres, ",");
+        strcat(concatenacionNombres, primerNombre);
+    }else{
+        if(strcmp(primerNombre, segundoNombre) > 0 && strcmp(primerNombre, tercerNombre) > 0 && strcmp(tercerNombre,segundoNombre ) > 0){
+        strcpy(concatenacionNombres, segundoNombre);
+        strcat(concatenacionNombres, ",");
+        strcat(concatenacionNombres,tercerNombre);
+        strcat(concatenacionNombres, ",");
+        strcat(concatenacionNombres, primerNombre);
+        }else{
+            if(strcmp(segundoNombre, primerNombre) > 0 && strcmp(segundoNombre, tercerNombre) > 0 && strcmp(primerNombre,tercerNombre ) > 0){
+            strcpy(concatenacionNombres, tercerNombre);
+            strcat(concatenacionNombres, ",");
+            strcat(concatenacionNombres,primerNombre);
+            strcat(concatenacionNombres, ",");
+            strcat(concatenacionNombres, segundoNombre);  
+            }else{
+                if(strcmp(segundoNombre, primerNombre) > 0 && strcmp(segundoNombre, tercerNombre) > 0 && strcmp(tercerNombre,primerNombre ) > 0){
+                    strcpy(concatenacionNombres, primerNombre);
+                    strcat(concatenacionNombres, ",");
+                    strcat(concatenacionNombres,tercerNombre);
+                    strcat(concatenacionNombres, ",");
+                    strcat(concatenacionNombres, segundoNombre);
+                }else{
+                    if(strcmp(tercerNombre, primerNombre) > 0 && strcmp(tercerNombre, segundoNombre) > 0 && strcmp(primerNombre,segundoNombre ) > 0){
+                    strcpy(concatenacionNombres, segundoNombre);
+                    strcat(concatenacionNombres, ",");
+                    strcat(concatenacionNombres,primerNombre);
+                    strcat(concatenacionNombres, ",");
+                    strcat(concatenacionNombres, tercerNombre);
+                    }else{
+                        strcpy(concatenacionNombres, primerNombre);
+                        strcat(concatenacionNombres, ",");
+                        strcat(concatenacionNombres,segundoNombre);
+                        strcat(concatenacionNombres, ",");
+                        strcat(concatenacionNombres, tercerNombre);
+                    }
+                }
+            }
+        }
+    }
+    printf("La cadena quedaria de siguiente forma %s", concatenacionNombres);*/
+
+
 
     getchar();
     return 0;
 
-    
-    
 }
