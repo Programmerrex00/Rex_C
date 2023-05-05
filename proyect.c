@@ -409,14 +409,9 @@ int main(){
     printf("El promedio de personas acorde a su altura es de %f", (suma/cantidadPersonas));
     
 
-
-
-
-
- 
     getchar();
     return 0;
 
-
+    
     
 }
