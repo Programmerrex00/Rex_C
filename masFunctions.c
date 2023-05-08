@@ -66,6 +66,47 @@ float gatosTotales(float sueldos[6]){
     return total;
 }*/
 
+//-------------------------------------------------------
+
+/*void llenarVectores(int vector[7]){
+    for (int i = 0; i < 7; i++){
+        printf("Ingrese el %i elemento: ", i+1);
+        scanf("%i", &vector[i]);
+        printf("\n");
+    }
+}
+
+void sumarVectores(int primerVector[7], int segundoVector[7], int tercerVector[7]){
+    for (int i = 0; i < 7; i++){
+        tercerVector[i] = primerVector[i] + segundoVector[i];
+    }
+}
+
+void impresion(int vector[7]){
+    for (int i = 0; i < 7; i++){
+        printf("%i - ", vector[i]);
+    }
+    printf("\n");
+}*/
+
+//-----------------------------------------------------------------
+
+void recopilarPalabra(char palabra[40]){
+    printf("Ingrese la palabra");
+    gets(palabra);
+    printf("\n");
+}
+
+int recopilarVocales(char palabra[40]){
+    int x = 0, contador = 0;
+    while (palabra[x] != '\0'){
+        if(){
+            
+        }
+        x++;
+    }
+    return contador;
+}
 
 
 int main(){
@@ -87,7 +128,7 @@ int main(){
     }
     }
     printf("\n");
-    printf("La superficie del primer rectangulo es de: %0.1f", retornoRectanguloOne);
+    printf("La superficie del primer rectangulo es de: %0.1f", retornoRectanguloOne);           
     printf("\n");
     printf("La superficie del segundo rectangulo es de: %0.1f", retornoRectanguloTwo);
     printf("\n");
@@ -97,7 +138,13 @@ int main(){
     /*float sueldos[6];
     cargarSueldos(sueldos);
     printf("\n");
+    imprimirSueldos(sueldos);
+    printf("\n");
     printf("Los gatos totales entre los sueldos es de: %0.2f ", gatosTotales(sueldos));*/
+
+    char palabra[40];
+    recopilarPalabra(palabra);
+    
 
 
     
