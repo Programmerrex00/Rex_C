@@ -119,7 +119,7 @@ void calcularPerimetro(int lado){
 
 //-----------------------------------------------------------
 
-void determinarGenero(char genero){
+/*void determinarGenero(char genero){
     if(genero == 'm' || genero == 'M'){
         printf("Es un hombre");
     }else if(genero == 'f' || genero == 'F'){
@@ -127,12 +127,59 @@ void determinarGenero(char genero){
     }else{
         printf("Especimen desconocido!!!");
     }
-}
+}*/
+
+//-----------------------------------------------------------------
+
+/*void verMayor(int value1, int value2, int value3){
+    if(value1 > value2 && value1 > value3){
+        printf("El numero mayor es %i", value1);
+    }else{
+        if(value2 > value3){
+            printf("El numero mayor es %i", value2);
+        }else{
+            printf("El numero mayor es %i", value3);
+        }
+    }
+    printf("\n---------------------------------------\n");
+
+}*/
+
+//------------------------------------------------------------------
 
 
+/*void rangoDeNumeros(int valor){
+    for(int i = 0;i <= valor;i++){
+        printf("%i\n", i);
+    }
+}*/
 
+//-------------------------------------------------------------
+/*void racorridoDeCarcteres(char caracter){
+    if(caracter == 'A' || caracter == 'E' || caracter == 'I' || caracter == 'O'
+    || caracter == 'U' || caracter == 'a' || caracter == 'e' || caracter == 'i'
+    || caracter == 'o' || caracter == 'u'){
+        printf("El caracter %c es una vocal\n", caracter);
+    }else{
+        printf("El caracter %c es una letra\n", caracter);
+    }
+}*/
 
+//--------------------------------------------------------------------
 
+/*float superficieDeUnTrianguloRetornando(float superficie){
+    return superficie * superficie;
+}*/
+
+//------------------------------------------------------------------
+
+/*int functionNumeroMayor(int numero1, int numero2){
+    if(numero1 > numero2){
+        return numero1;
+    }else{
+        return numero2;
+    }
+}*/
 
 
 int main(){
@@ -165,14 +212,32 @@ int main(){
         calcularPerimetro(valor);
     }
    } while (valor < 10 || valor > 20);*/
-    
-    determinarGenero('m');
+
+    /*int value1, value2, value3;
+    printf("\nIngrese el primer valor");
+    scanf("%i", &value1);
     printf("\n");
-    determinarGenero('F');
+    printf("Ingrese el segundo valor");
+    scanf("%i", &value2);
     printf("\n");
-    determinarGenero('j');
-    
-    
+    printf("Ingrese el tercer valor");
+    scanf("%i", &value3);
+    printf("\n");
+    verMayor(value1, value2, value3);*/
+
+    /*float superficie;
+    printf("Ingrese la superficie del cuadrado");
+    scanf("%f", &superficie);
+    printf("\n La superficie del cuadrado es de: %0.2f", superficieDeUnTrianguloRetornando(superficie));*/
+
+    /*int value1, value2;
+    printf("Ingrese el segundo numero");
+    scanf("%i", &value1);
+    printf("\n");
+    printf("Ingrese el primer numero");
+    scanf("%i", &value2);
+    printf("El numero mayor es: %i", functionNumeroMayor(value1, value2));*/
+
 
     getch();
     return 0;
