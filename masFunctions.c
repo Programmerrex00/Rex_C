@@ -295,7 +295,7 @@ void imprimirMenorYRepeticiones(int numeros[5]){
 //------------------------------------------------------------------------------
 
 
-void cargarDatos(float sueldos[5]){
+/*void cargarDatos(float sueldos[5]){
     for (int i = 0; i < 5; i++){
         printf("Ingrese el %i sueldo del empleado", i+1);
         scanf("%f", &sueldos[i]);
@@ -306,8 +306,8 @@ void cargarDatos(float sueldos[5]){
 
 void ordenamientoBurbuja(float vector[5]){
     float aux;
-    for (int i = 0; i < 5; i++){
-        for (int j = 0; j < 4; j++){
+    for (int i = 0; i < 4; i++){
+        for (int j = 0; j < 4 - i; j++){
             if(vector[j] > vector[j+1]){
                 aux = vector[j+1];
                 vector[j+1] = vector[j];
@@ -319,6 +319,49 @@ void ordenamientoBurbuja(float vector[5]){
         printf("%0.3f -", vector[i]);
     }
 
+}*/
+
+//------------------------------------------------------------------------------------
+
+void ordenarDatosMenorAMayor(int datos[5]){
+    int aux;
+    for (int i = 0; i < 4; i++){
+        for (int j = 0 ; j < 4 ; j++){
+            if(datos[i+1] < datos[i]){
+                aux = datos[i+1];
+                datos[i+1] = datos[i];
+                datos[i] = aux;
+            }
+        }
+        
+    }
+}
+
+void ordenarDatosMayorAMenor(int datos[5]){
+    int aux;
+    for (int i = 0; i < 4; i++){
+        for (int j = 0 ; j < 4 ; j++){
+            if(datos[i+1] > datos[i]){
+                aux = datos[i+1];
+                datos[i+1] = datos[i];
+                datos[i] = aux;
+            }
+        }
+    }
+}
+
+void pedirDatos(int datos[5]){
+    for (int i = 0; i < 5; i++){
+        printf("Ingrese el %i elemento del array", i+1);
+        scanf("%i", &datos[i]);
+        printf("\n");
+    }
+}
+
+void mostrarArray(int datos[5]){
+    for (int i = 0; i < 5; i++){
+        printf("%i - ", datos[i]);
+    }
 }
 
 int main(){
@@ -395,10 +438,15 @@ int main(){
 
     //----------------------------------------------------------------------------------------
      
-     float valores[5];
-    cargarDatos(valores);
-    ordenamientoBurbuja(valores);
-//sjfaskljdflajodfjasojdflñajsdof
+    int datos[5];
+    pedirDatos(datos);
+    mostrarArray(datos);
+    ordenarDatosMayorAMenor(datos);
+    printf("Array ordenada de mayor a menor: \n");
+    mostrarArray(datos);
+    printf("Array ordenada de menor a mayor: \n");
+    ordenarDatosMenorAMayor(datos);
+    mostrarArray(datos);
 
     
     
