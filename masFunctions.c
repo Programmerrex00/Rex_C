@@ -306,8 +306,8 @@ void imprimirMenorYRepeticiones(int numeros[5]){
 
 void ordenamientoBurbuja(float vector[5]){
     float aux;
-    for (int i = 0; i < 5; i++){
-        for (int j = 0; j < 4; j++){
+    for (int i = 0; i < 4; i++){
+        for (int j = 0; j < 4 - i; j++){
             if(vector[j] > vector[j+1]){
                 aux = vector[j+1];
                 vector[j+1] = vector[j];
@@ -318,7 +318,77 @@ void ordenamientoBurbuja(float vector[5]){
     for (int i = 0; i < 5; i++){
         printf("%0.3f -", vector[i]);
     }
+<<<<<<< HEAD
 }*/
+
+
+//------------------------------------------------------------------------------------
+
+/*void ordenarDatosMenorAMayor(int datos[5]){
+    int aux;
+    for (int i = 0; i < 4; i++){
+        for (int j = 0 ; j < 4-i; j++){
+            if(datos[j+1] < datos[j]){
+                aux = datos[j+1];
+                datos[j+1] = datos[j];
+                datos[j] = aux;
+            }
+        }
+        
+    }
+}
+
+void ordenarDatosMayorAMenor(int datos[5]){
+    int aux;
+    for (int i = 0; i < 4; i++){
+        for (int j = 0 ; j < 4-i; j++){
+            if(datos[j+1] > datos[j]){
+                aux = datos[j+1];
+                datos[j+1] = datos[j];
+                datos[j] = aux;
+            }
+        }
+    }
+}
+
+void pedirDatos(int datos[5]){
+    for (int i = 0; i < 5; i++){
+        printf("Ingrese el %i elemento del array", i+1);
+        scanf("%i", &datos[i]);
+        printf("\n");
+    }
+}
+
+void mostrarArray(int datos[5]){
+    for (int i = 0; i < 5; i++){
+        printf("%i - ", datos[i]);
+    }
+}*/
+
+//------------------------------------------------------------------------------
+
+void llenarMatriz(int matriz[3][5]){
+    for (int f = 0; f < 3; f++){
+        for (int c = 0; c < 5; c++){
+            printf("Ingrese el elemento en la posicion (%i, %i): ",f, c);
+            scanf("%i", &matriz[f][c]);
+            printf("\n");
+        }   
+    }
+}
+
+void mostrarMatriz(int matriz[3][5]){
+    for (int f = 0; f < 3; f++){
+        for (int c = 0; c < 5; c++){
+            printf("Posicion: [%i][%i] = %i", f, c, matriz[f][c]);
+            printf("\n");
+        }
+        
+    }
+    
+}
+
+
 
 int main(){
     /*float largo, ancho;
@@ -395,9 +465,21 @@ int main(){
     //----------------------------------------------------------------------------------------
      
     
+    /*int datos[5];
+    pedirDatos(datos);
+    mostrarArray(datos);
+    ordenarDatosMayorAMenor(datos);
+    printf("\nArray ordenada de mayor a menor: \n");
+    mostrarArray(datos);
+    printf("\nArray ordenada de menor a mayor: \n");
+    ordenarDatosMenorAMayor(datos);
+    mostrarArray(datos);*/
 
 
+    //-----------------------------------------------------------------------------------------------
+    int matriz[3][5];
+    llenarMatriz(matriz);
+    mostrarMatriz(matriz);
     
     
-
 }
