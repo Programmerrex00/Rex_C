@@ -367,7 +367,7 @@ void mostrarArray(int datos[5]){
 
 //------------------------------------------------------------------------------
 
-void llenarMatriz(int matriz[3][5]){
+/*void llenarMatriz(int matriz[3][5]){
     for (int f = 0; f < 3; f++){
         for (int c = 0; c < 5; c++){
             printf("Ingrese el elemento en la posicion (%i, %i): ",f, c);
@@ -385,9 +385,94 @@ void mostrarMatriz(int matriz[3][5]){
         }
         
     }
-    
+}*/
+
+//------------------------------------------------------------------------------
+
+/*void cargarMatriz(int cargarMatriz[4][4]){
+    for (int f = 0; f < 4; f++){
+        for (int c = 0; c < 4; c++){
+            printf("Ingrese el elemento en la posicion (%i, %i): ",f, c);
+            scanf("%i", &cargarMatriz[f][c]);
+            printf("\n");
+        }
+    }
 }
 
+void mostrarMatriz(int matriz[4][4]){
+for (int f = 0; f < 4; f++){
+        for (int c = 0; c < 4; c++){
+            printf(" [%i] ", matriz[f][c]);
+        }
+        printf("\n");
+    }
+}
+
+void diagonalPrincipal(int matriz[4][4]){
+    for (int f = 0; f < 4; f++){
+        for (int c = 0; c <= f; c++){
+            if(c == f){
+                printf("[%i] ", matriz[f][c]);
+            }
+        }
+        
+    }
+    
+}*/
+
+//-----------------------------------------------------------------------
+
+/*void cargarMatriz(int cargarMatriz[3][4]){
+    for (int f = 0; f < 3; f++){
+        for (int c = 0; c < 4; c++){
+            printf("Ingrese el elemento en la posicion (%i, %i): ",f, c);
+            scanf("%i", &cargarMatriz[f][c]);
+            printf("\n");
+        }
+    }
+}
+
+
+void mostrarMatriz(int matriz[3][4]){
+for (int f = 0; f < 3; f++){
+        for (int c = 0; c < 4; c++){
+            printf(" [%i] ", matriz[f][c]);
+        }
+        printf("\n");
+    }
+}
+
+void impresionPrimeraFina(int matriz[3][4]){
+    printf("\n");
+    for (int f = 0; f < 1; f++){
+        for (int c = 0; c < 4; c++){
+            if(f == 0){
+                printf("[ %i ]", matriz[f][c]);
+            }
+        }
+    }
+}
+
+void impresionUltimaFina(int matriz[3][4]){
+    printf("\n");
+    for (int f = 2; f < 3; f++){
+        for (int c = 0; c < 4; c++){
+            printf("[ %i ]", matriz[f][c]);
+        }
+    }
+}
+
+
+void impresionPrimeraColumna(int matriz[3][4]){
+    printf("\n");
+    for (int f = 0; f < 3; f++){
+        for (int c = 0; c < 1; c++){
+           printf("[ %i ]", matriz[f][c]); 
+        }
+    } 
+}*/
+
+//-------------------------------------------------------------------
 
 
 int main(){
@@ -475,11 +560,16 @@ int main(){
     ordenarDatosMenorAMayor(datos);
     mostrarArray(datos);*/
 
-
     //-----------------------------------------------------------------------------------------------
-    int matriz[3][5];
-    llenarMatriz(matriz);
-    mostrarMatriz(matriz);
-    
-    
+    /*int numeros[3][4];
+    cargarMatriz(numeros);
+    printf("\n");
+    mostrarMatriz(numeros);
+    impresionPrimeraFina(numeros);
+    impresionUltimaFina(numeros);
+    impresionPrimeraColumna(numeros);*/
+
+    //-------------------------------------------------------------------------------------------------
+
+
 }
