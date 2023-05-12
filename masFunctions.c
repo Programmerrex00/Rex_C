@@ -295,7 +295,7 @@ void imprimirMenorYRepeticiones(int numeros[5]){
 //------------------------------------------------------------------------------
 
 
-void cargarDatos(float sueldos[5]){
+/*void cargarDatos(float sueldos[5]){
     for (int i = 0; i < 5; i++){
         printf("Ingrese el %i sueldo del empleado", i+1);
         scanf("%f", &sueldos[i]);
@@ -318,8 +318,7 @@ void ordenamientoBurbuja(float vector[5]){
     for (int i = 0; i < 5; i++){
         printf("%0.3f -", vector[i]);
     }
-
-}
+}*/
 
 int main(){
     /*float largo, ancho;
@@ -395,9 +394,7 @@ int main(){
 
     //----------------------------------------------------------------------------------------
      
-     float valores[5];
-    cargarDatos(valores);
-    ordenamientoBurbuja(valores);
+    
 
 
     
