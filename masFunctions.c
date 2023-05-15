@@ -366,7 +366,7 @@ void mostrarArray(int datos[5]){
 
 //------------------------------------------------------------------------------
 
-void llenarMatriz(int matriz[3][5]){
+/*void llenarMatriz(int matriz[3][5]){
     for (int f = 0; f < 3; f++){
         for (int c = 0; c < 5; c++){
             printf("Ingrese el elemento en la posicion (%i, %i): ",f, c);
@@ -382,10 +382,13 @@ void mostrarMatriz(int matriz[3][5]){
             printf("Posicion: [%i][%i] = %i", f, c, matriz[f][c]);
             printf("\n");
         }
-        
     }
-    
-}
+}*/
+
+//---------------------------------------------------------------------------------
+
+
+
 
 
 int main(){
@@ -473,9 +476,7 @@ int main(){
     mostrarArray(datos);*/
 
     //-----------------------------------------------------------------------------------------------
-    int matriz[3][5];
-    llenarMatriz(matriz);
-    mostrarMatriz(matriz);
+
     
     
 }
