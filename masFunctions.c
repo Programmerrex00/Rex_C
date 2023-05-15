@@ -385,7 +385,7 @@ void mostrarMatriz(int matriz[3][5]){
         }
     }
     
-}
+}*/
 
 
 int main(){
@@ -474,9 +474,14 @@ int main(){
     mostrarArray(datos);*/
 
     //-----------------------------------------------------------------------------------------------
-    int matriz[3][5];
-    llenarMatriz(matriz);
-    mostrarMatriz(matriz);
-    
+       /*int numeros[3][4];
+    cargarMatriz(numeros);
+    printf("\n");
+    mostrarMatriz(numeros);
+    impresionPrimeraFina(numeros);
+    impresionUltimaFina(numeros);
+    impresionPrimeraColumna(numeros);*/
+
+    //-------------------------------------------------------------------------------------------------
     
 }
