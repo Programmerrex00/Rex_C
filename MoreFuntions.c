@@ -97,7 +97,7 @@ void mostrarMatrizDeCaracteres(char articulos[3][40]){
 }*/
 //--------------------------------------------------------------------------------------
 
-void llenarDatosPersonas(char personas[5][30]){
+/*void llenarDatosPersonas(char personas[5][30]){
     for (int i = 0; i < 5; i++){
         printf("Ingrese la %i persona: ", i+1);
         gets(personas[i]);
@@ -123,7 +123,45 @@ int consultarExistencia(char personas[5][30]){
     }
     
     return existe;
+}*/
+
+//---------------------------------------------------------------------------------------------
+
+void llenarDatosPersonas(char personas[5][30]){
+    for (int i = 0; i < 5; i++){
+        printf("Ingrese la %i persona: ", i+1);
+        gets(personas[i]);
+        printf("\n");
+    }
 }
+
+
+void mostrarDatos(char personas[5][30]){
+    for (int i = 0; i < 5; i++){
+        printf("Persona %i: %s\n", i+1, personas[i]);
+    }
+}
+
+
+void ordenarAlfabeticamenteLosDatos(char personas[5][30]){
+    char aux[30];
+    for (int j = 0; j < 5; j++){
+        for (int i = 0; i < 5-1; i++){
+            if(strcmp(personas[i+1],personas[i]) < 0){
+                strcpy(aux, personas[i]);
+                strcpy(personas[i], personas[i+1]);
+                strcpy(personas[i+1], aux);
+            }
+        }
+    }
+    printf("\n");
+}
+
+
+
+
+
+
 
 int main(){
     /*int valores[3][4];
@@ -144,16 +182,18 @@ int main(){
     mostrarMatrizDeCaracteres(articulos);*/
 
     //--------------------------------------------------------------------------
-    char personas[5][30];
+    /*char personas[5][30];
     llenarDatosPersonas(personas);
     mostrarDatos(personas);
     if(consultarExistencia(personas) == 1){
         printf("La persona ya esta es la lista!!");
     }else{
         printf("La persona no se encuentra en la lista!!");
-    }
-    
+    }*/
 
-
-    //JOSE!!!!
+    char personas[5][30];
+    llenarDatosPersonas(personas);
+    mostrarDatos(personas);
+    ordenarAlfabeticamenteLosDatos(personas);
+    mostrarDatos(personas);
 }
