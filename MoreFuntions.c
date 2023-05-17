@@ -127,7 +127,7 @@ int consultarExistencia(char personas[5][30]){
 
 //---------------------------------------------------------------------------------------------
 
-void llenarDatosPersonas(char personas[5][30]){
+/*void llenarDatosPersonas(char personas[5][30]){
     for (int i = 0; i < 5; i++){
         printf("Ingrese la %i persona: ", i+1);
         gets(personas[i]);
@@ -155,13 +155,157 @@ void ordenarAlfabeticamenteLosDatos(char personas[5][30]){
         }
     }
     printf("\n");
+}*/
+
+//---------------------------------------------------------------------
+
+/*void llenarDatosDeLasPersonas(char personas[5][30]){
+    for (int i = 0; i < 5; i++){
+        printf("Ingrese la %i persona", i+1);
+        gets(personas[i]);
+        printf("\n");
+    }
+}
+
+void mostrarDatos(char personas[5][30]){
+    for (int i = 0; i < 5; i++){
+        printf("Persona %i: %s\n", i+1, personas[i]);
+    }
+}
+
+void buscarDatoMenorAlfabeticamente(char personas[5][30]){
+    char datoMenor[30];
+    strcpy(datoMenor, personas[0]);
+    for (int i = 0; i < 5; i++){
+        if(strcmp(personas[i], datoMenor) < 0){
+            strcpy(datoMenor, personas[i]);
+        }
+    }
+    printf("\n El dato menor alfabeticamente es: %s", datoMenor);
+    
+}*/
+//-----------------------------------------------------------
+/*void cargarDatosDeEdadesYPersonas(char personas[5][30], int edades[5]){
+    for (int i = 0; i < 5; i++){
+        printf("Ingrese el nombre de la %i persona: ", i+1);
+        gets(personas[i]);
+        printf("\n");
+        printf("cual es la edad de %s ", personas[i]);
+        scanf("%i", &edades[i]);
+        printf("\n");
+        fflush(stdin); //Colocamos esto en la linea 196 para que limpie el buffe y puede seguir pidiendo datos, mas no se salte de linea
+    }
+}
+
+void mostrarNombreMayoresDeEdad(char personas[5][30], int edades[5]){
+    printf("Estas son las personas meyores de edad: \n");
+    for (int i = 0; i < 5; i++){
+        if(edades[i] >= 18){
+            printf(" - %s \n", personas[i]);
+        }
+    }
+}*/
+
+//--------------------------------------------------------------------------------
+
+/*void cargarNombreDeProductosYPrecios(char productos[5][30], float precios[5]){
+    for (int i = 0; i < 5; i++){
+        printf("Ingrese el nombre del %i producto: ", i+1);
+        gets(productos[i]);
+        printf("\n");
+        printf("cual es el precio del producto %s ", productos[i]);
+        scanf("%f", &precios[i]);
+        printf("\n");
+        fflush(stdin); //Colocamos esto en la linea 196 para que limpie el buffe y puede seguir pidiendo datos, mas no se salte de linea
+    }
+}
+
+void mostrarProductosConUnPrecioMayorAlPrimero(float precios[5]){
+    int cantidadProductosMayores = 0;
+    printf("Estos son los productos con un presio mayor al primer Producto \n");
+    for (int i = 1; i < 5; i++){
+        if (precios[0] < precios[i]){
+            cantidadProductosMayores++;
+        }
+    }
+    printf("\n La cantidad de productos con un precio mayor al primero: %i", cantidadProductosMayores);
+    
+}*/
+
+//---------------------------------------------------------------------------------
+
+/*void perdirNombreYNotas(char estudiantes[4][30],char condicion[4][20], int notas[4]){
+    for (int i = 0; i < 4; i++){
+        printf("Ingrese el nombre del %i alumno: ", i+1);
+        gets(estudiantes[i]);
+        printf("\n");
+        printf("Ingrese la nota del alumno %s:", estudiantes[i]);
+        scanf("%i", &notas[i]);
+        printf("\n");
+        fflush(stdin);
+        if(notas[i] >= 8){
+            strcpy(condicion[i], "Muy Bueno");
+        }else if(notas[i] >= 4 && notas[i] <= 7){
+            strcpy(condicion[i], "Bueno");
+        }else{
+            strcpy(condicion[i], "Insuficiente");
+        }
+    }
+}
+
+void mostrarAlumnoYnotas(char estudiantes[4][30],char condicion[4][20], int notas[4]){
+    int contador = 0;
+    for (int i = 0; i < 4; i++){
+        printf("Estudiante:  %s | Nota: %i | Estado: %s \n", estudiantes[i], notas[i], condicion[i]);
+        if(strcmp(condicion[i],"Muy Bueno") == 0){
+            contador++;
+        }
+    }
+    printf("La cantidad de alumnos con un Estado de 'Muy Bueno' es: %i", contador);
+}*/
+
+//------------------------------------------------------------------------------------------
+
+void perdirNombreYNotas(char estudiantes[5][30], int notas[5]){
+    for (int i = 0; i < 5; i++){
+        printf("Ingrese el nombre del %i alumno: ", i+1);
+        gets(estudiantes[i]);
+        printf("\n");
+        printf("Ingrese la nota del alumno %s:", estudiantes[i]);
+        scanf("%i", &notas[i]);
+        printf("\n");
+        fflush(stdin);
+    }
 }
 
 
 
+void ordenarDatos(char estudiantes[5][30], int notas[5]){
+    char auxEstudent[30];
+    int auxNota;
+    for (int i = 0; i < 5; i++){
+        for (int j = 0; j < 5-i; j++){
+            if(notas[j+1] > notas[j]){
+                auxNota = notas[j];
+                notas[j] = notas[j+1];
+                notas[j+1] = auxNota;
+                strcpy(auxEstudent, estudiantes[j]);
+                strcpy(estudiantes[j], estudiantes[j+1]);
+                strcpy(estudiantes[j+1], auxEstudent);
+            }
 
+        }
+        
+    }
+    
+}
 
-
+void mostrarAlumnoYnotas(char estudiantes[5][30], int notas[5]){
+    for (int i = 0; i < 5; i++){
+        printf("Estudiante:  %s | Nota: %i \n", estudiantes[i], notas[i]);
+    }
+    
+}
 
 int main(){
     /*int valores[3][4];
@@ -191,9 +335,28 @@ int main(){
         printf("La persona no se encuentra en la lista!!");
     }*/
 
-    char personas[5][30];
+   /*char personas[5][30];
     llenarDatosPersonas(personas);
     mostrarDatos(personas);
     ordenarAlfabeticamenteLosDatos(personas);
     mostrarDatos(personas);
+    printf("El nombre alfabeticamente menor a los demas es: %s", personas[0]);*/
+
+
+    //------------------------------------------------------------------------
+    
+    /*char estudiantes[4][30], condicion[4][20];
+    int notas[4];
+    perdirNombreYNotas(estudiantes, condicion, notas);
+    mostrarAlumnoYnotas(estudiantes, condicion, notas);*/
+
+    //--------------------------------------------------------------------------
+    char nombresAlumnos[5][30];
+    int notas[5];
+    perdirNombreYNotas(nombresAlumnos, notas);
+    ordenarDatos(nombresAlumnos, notas);
+    mostrarAlumnoYnotas(nombresAlumnos, notas);
+    
+
+
 }
