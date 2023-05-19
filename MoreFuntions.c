@@ -308,8 +308,68 @@ void mostrarAlumnoYnotas(char estudiantes[5][30], int notas[5]){
 }*/
 
 
-
 //-----------------------------------------------------------------
+
+
+void perdirPaisesYHabitantes(char paises[5][30], int habitantes[5]){
+    for (int i = 0; i < 5; i++){
+        printf("Ingrese el %i pais: ", i+1);
+        gets(paises[i]);
+        printf("\n");
+        printf("Ingrese la cantidad de habitantes que tiene %s:", paises[i]);
+        scanf("%i", &habitantes[i]);
+        printf("\n");
+        fflush(stdin);
+    }
+}
+
+
+void ordenasPaisesAlfabeticamente(char paises[5][30], int habitantes[5]){
+    char auxpaises[30];
+    int habitantess;
+    for (int i = 0; i < 5; i++){
+        for (int j = 0; j < 4; j++){
+            if(strcmp(paises[j+1],paises[j]) < 0){
+                strcpy(auxpaises, paises[j]);
+                strcpy(paises[j], paises[j+1]);
+                strcpy(paises[j+1], auxpaises);
+
+                habitantess = habitantes[j];
+                habitantes[j] = habitantes[j+1];
+                habitantes[j+1] = habitantess;  
+            }
+        }     
+    }
+}
+
+
+
+void mostrarPaises(char paises[5][30], int habitantes[5]){
+    for (int i = 0; i < 5; i++){
+       printf("Paises: %s | Habitantes: %i \n", paises[i], habitantes[i]);
+    }
+}
+
+
+void ordenarConCantidadDeHabitantes(char paises[5][30], int habitantes[5]){
+    char auxpaises[30];
+    int habitantess;
+    for (int i = 0; i < 5; i++){
+        for (int j = 0; j < 4; j++){
+            if(habitantes[j+1] > habitantes[j]){
+                habitantess = habitantes[j];
+                habitantes[j] = habitantes[j+1];
+                habitantes[j+1] = habitantess;  
+                strcpy(auxpaises, paises[j]);
+                strcpy(paises[j], paises[j+1]);
+                strcpy(paises[j+1], auxpaises);
+            }
+        }     
+    }
+}
+
+
+
 
 int main(){
     /*int valores[3][4];
@@ -356,9 +416,28 @@ int main(){
 
     //--------------------------------------------------------------------------
 
+
+    /*char nombresAlumnos[5][30];
+    int notas[5];
+    perdirNombreYNotas(nombresAlumnos, notas);
+    ordenarDatos(nombresAlumnos, notas);
+    mostrarAlumnoYnotas(nombresAlumnos, notas);*/
+
+    //---------------------------------------------------------------------------
+    char paises[5][30];
+    int habitantes[5];
+    perdirPaisesYHabitantes(paises, habitantes);
+    printf("Ordenado alfabeticamente por paises: \n");
+    ordenasPaisesAlfabeticamente(paises, habitantes);
+    mostrarPaises(paises, habitantes);
+ /*   printf("Ordenado por cantidad de habitantes: \n");
+    ordenarConCantidadDeHabitantes(paises, habitantes);
+    mostrarPaises(paises, habitantes);*/
     
 
     
     getch();
     return 0;
+
+
 }
