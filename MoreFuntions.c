@@ -266,7 +266,7 @@ void mostrarAlumnoYnotas(char estudiantes[4][30],char condicion[4][20], int nota
 
 //------------------------------------------------------------------------------------------
 
-void perdirNombreYNotas(char estudiantes[5][30], int notas[5]){
+/*void perdirNombreYNotas(char estudiantes[5][30], int notas[5]){
     for (int i = 0; i < 5; i++){
         printf("Ingrese el nombre del %i alumno: ", i+1);
         gets(estudiantes[i]);
@@ -305,7 +305,11 @@ void mostrarAlumnoYnotas(char estudiantes[5][30], int notas[5]){
         printf("Estudiante:  %s | Nota: %i \n", estudiantes[i], notas[i]);
     }
     
-}
+}*/
+
+
+
+//-----------------------------------------------------------------
 
 int main(){
     /*int valores[3][4];
@@ -351,12 +355,10 @@ int main(){
     mostrarAlumnoYnotas(estudiantes, condicion, notas);*/
 
     //--------------------------------------------------------------------------
-    char nombresAlumnos[5][30];
-    int notas[5];
-    perdirNombreYNotas(nombresAlumnos, notas);
-    ordenarDatos(nombresAlumnos, notas);
-    mostrarAlumnoYnotas(nombresAlumnos, notas);
+
     
 
-
+    
+    getch();
+    return 0;
 }
