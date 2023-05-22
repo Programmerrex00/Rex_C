@@ -25,6 +25,8 @@ void pedirDatosYSueldos(char empleados[FILAS][COLUMNAS], float recogerSueldos[FI
         fflush(stdin);
     }
 }
+
+
 void calcularSueldos(float recogerSueldos[FILAS][3], float sueldosFinales[FILAS]){
     for (int i = 0; i < FILAS; i++){
         for (int j = 0; j < SUELDOS; j++){
@@ -32,6 +34,8 @@ void calcularSueldos(float recogerSueldos[FILAS][3], float sueldosFinales[FILAS]
         }
     }
 }
+
+
 void mostrarDatos(char empleados[FILAS][COLUMNAS], float sueldosFinales[FILAS],float recogerSueldos[FILAS][SUELDOS]){
     printf("Empleados\t\t\tSueldos\t\t\tSueldo Total\n");
     printf("\t\t\t1 Mes \t2 Mes \t3 Mes \n");
