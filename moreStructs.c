@@ -16,7 +16,7 @@ void mostrarProducto(struct producto pro){
 }*/
 
 
-struct pais{
+/*struct pais{
     char nombre[30];
     int cantidad;
 };
@@ -24,6 +24,18 @@ struct pais{
 void mostrarDatos(struct pais pa){
     printf("Nombre del pais: %s ", pa.nombre);
     printf("Cantidad de habitantes: %i \n", pa.cantidad);
+}*/
+
+struct producto{
+    int codigo;
+    char descripcion[40];
+    float precio;
+};
+
+struct producto cargarDatos(){
+    struct producto pro;
+    printf("Ingrese el codigo del producto: ");
+    scanf("%i", &pro.codigo);
 }
 
 
@@ -35,10 +47,14 @@ int main(){
     //otra forma de inicializar un struct
     struct producto product ={333, "Los gatos son felices", 3.000};
     mostrarProducto(product);*/
+
+    //-------------------------------------------------------------------------------------
+    /*
     struct pais country1 = {"Brazil", 333}, country2 = {"Roma", 980}, country3 = {"Estados Unidos", 200};
     mostrarDatos(country1);
     mostrarDatos(country2);
-    mostrarDatos(country3);
+    mostrarDatos(country3);*/
+
 
     
 }
