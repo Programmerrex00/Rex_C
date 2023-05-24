@@ -36,6 +36,18 @@ struct producto cargarDatos(){
     struct producto pro;
     printf("Ingrese el codigo del producto: ");
     scanf("%i", &pro.codigo);
+    fflush(stdin);
+    printf("Ingrese la descripcion del producto: ");
+    gets(pro.descripcion);
+    fflush(stdin);
+    printf("Ingrese el precio del producto: ");
+    scanf("%f", &pro.precio);
+    return pro;
+}
+void imprimirStruct( struct producto pro){
+    printf("Codigo: %i \t", pro.codigo);
+    printf("Descripcion: %s \t", pro.descripcion);
+    printf("Precio: %0.3f \n", pro.precio);
 }
 
 
@@ -55,6 +67,12 @@ int main(){
     mostrarDatos(country2);
     mostrarDatos(country3);*/
 
+
+    struct producto pro1, pro2;
+    pro1 = cargarDatos();
+    pro2 = cargarDatos();
+    imprimirStruct(pro1);
+    imprimirStruct(pro2);
 
     
 }
