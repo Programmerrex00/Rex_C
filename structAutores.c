@@ -12,8 +12,7 @@ struct libro{
     char autor[40];
 };
 
-void cargarVector(struct libro librito[TAMANO])
-{
+void cargarVector(struct libro librito[TAMANO]){
     for (int i = 0; i < TAMANO; i++){
         printf("Ingrese el codigo del %i libro: ", i + 1);
         scanf("%i", &librito[i].codigo);
