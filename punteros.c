@@ -6,7 +6,7 @@
 
 
 int main(){
-    int dato1 = 20;
+    /*int dato1 = 20;
     int dato2 = 200;
     int *puntero;
     puntero = &dato1;
@@ -15,7 +15,20 @@ int main(){
 
     puntero = &dato2;
     printf("Lo apuntado por puntero es: %i\n", *puntero);
-    printf("La direccion que almacena puntero es: %p\n", puntero);
+    printf("La direccion que almacena puntero es: %p\n", puntero);*/
+
+    int x;
+    int y;
+    int *puntero;
+    puntero = &x;
+    *puntero = 30;
+    puntero = &y;
+    *puntero = 500;
+
+    printf("El valor de X es: %i\n", x);
+    printf("El valor de X es: %i", y);
+
+
 
 
     getch();

@@ -40,4 +40,5 @@ int main(){
     impresionDatos(triangulito);
     getch();
     return 0;
+    
 }
