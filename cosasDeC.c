@@ -22,6 +22,8 @@ void imprimirSueldos(float sueldoOperarios[TAMANO]){
 
 
 
+
+
 int main(){
     /*float sueldosOperarios[TAMANO];
     cargarSueldos(sueldosOperarios);
