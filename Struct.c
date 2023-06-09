@@ -73,7 +73,7 @@ int main(){
     printf("Ingrese la cantidad de habitantes que tiene el pais %s : ", pais3.nombre);
     scanf("%i", &pais3.cantidadHabitantes);
     printf("\n");
-
+    
     if(pais1.cantidadHabitantes > pais2.cantidadHabitantes && pais1.cantidadHabitantes > pais3.cantidadHabitantes){
         imprimir(pais1.nombre, pais1.cantidadHabitantes);
     }else{

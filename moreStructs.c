@@ -44,6 +44,7 @@ struct producto cargarDatos(){
     scanf("%f", &pro.precio);
     return pro;
 }
+
 void imprimirStruct( struct producto pro){
     printf("Codigo: %i \t", pro.codigo);
     printf("Descripcion: %s \t", pro.descripcion);

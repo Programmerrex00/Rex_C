@@ -63,6 +63,8 @@ int main(){
     //struct producto productos[TAMANO];
     //cargarVectorDeProductos(productos);
     //imprimirProducto(productos);
+
+    
     pedirNumero();
 
 

@@ -184,7 +184,9 @@ void buscarDatoMenorAlfabeticamente(char personas[5][30]){
     printf("\n El dato menor alfabeticamente es: %s", datoMenor);
     
 }*/
-//-----------------------------------------------------------
+//-----------------------------------------------------------------------
+
+
 /*void cargarDatosDeEdadesYPersonas(char personas[5][30], int edades[5]){
     for (int i = 0; i < 5; i++){
         printf("Ingrese el nombre de la %i persona: ", i+1);
@@ -193,7 +195,7 @@ void buscarDatoMenorAlfabeticamente(char personas[5][30]){
         printf("cual es la edad de %s ", personas[i]);
         scanf("%i", &edades[i]);
         printf("\n");
-        fflush(stdin); //Colocamos esto en la linea 196 para que limpie el buffe y puede seguir pidiendo datos, mas no se salte de linea
+        fflush(stdin); //Colocamos esto en la linea 198 para que limpie el buffe y puede seguir pidiendo datos, mas no se salte de linea
     }
 }
 
@@ -369,6 +371,14 @@ void ordenarConCantidadDeHabitantes(char paises[5][30], int habitantes[5]){
 }*/
 
 //-------------------------------------------------------------------
+
+
+
+
+
+
+
+
 
 
 
