@@ -9,7 +9,8 @@
 }*/
 
 void cargarDireccionIncremento(int *incremento){
-    *incremento += 1; 
+    (*incremento)++;
+    //*incremento += 1; cualquier de las dos opciones es valida.
 }
 
 
@@ -28,6 +29,7 @@ int main(){
     printf("Incremento: %i\n", incremento);
     cargarDireccionIncremento(&incremento);
     printf("Incremento: %i", incremento);
+    
     getch();
     return 0;
 }
