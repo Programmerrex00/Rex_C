@@ -13,7 +13,8 @@
 
 void imprimirVector(float *puntero){
     for (int i = 0; i < TAMANO; i++){
-        printf("%0.3f\n", puntero[i]);
+        printf("%0.3f\n", puntero[i]);  
+        
     }
     
 }*/

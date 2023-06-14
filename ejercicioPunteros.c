@@ -27,6 +27,21 @@ void determinarMayorYMenor(int vector[TAMANO], int *mayor, int *menor){
         if(vector[i] < *menor){
             *menor = vector[i];
         }
+    }   
+}
+
+void ordenarVector(int *puntero){
+    int aux = 0;
+    for (int i = 0; i < TAMANO-1; i++){
+        for (int j = i+1; j < TAMANO; j++){
+            if (puntero[j] < puntero[i]){
+                aux = puntero[j];
+                puntero[j] = puntero[i];
+                puntero[i] = aux;
+            }
+            
+        }
+        
     }
     
 }
@@ -38,6 +53,8 @@ int main(){
     int numeroMayor, numeroMenor;
     imprimirVector(vector);
     determinarMayorYMenor(vector, &numeroMayor, &numeroMenor);
-    printf("El numero mayor de la lista es %i y el menor es %i", numeroMayor, numeroMenor);
+    printf("\nEl numero mayor de la lista es %i y el menor es %i\n", numeroMayor, numeroMenor);
+    ordenarVector(vector);
+    imprimirVector(vector);
 
 }

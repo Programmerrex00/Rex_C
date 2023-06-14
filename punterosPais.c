@@ -11,7 +11,7 @@ struct pais{
 
 void cargarDatosDelPais(struct pais *country){
     printf("Ingrese el nombre del pais: ");
-    gets(country->nombre);
+    gets((*country).nombre);
     printf("Ingrese la cantidad de los habitantes: ");
     scanf("%i", &country->cantidadHabitantes);
     fflush(stdin);

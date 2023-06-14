@@ -20,7 +20,6 @@ void imprimirVector(int (*puntero)[COLUMNAS]){
        for (int i = 0; i < FILAS; i++){
         for (int j = 0; j < COLUMNAS; j++){
             printf("Ingrese el numero en la posicion [%i][%i]: %i\n", i,j, puntero[i][j]);
-       
         }
     }
 }
