@@ -9,7 +9,7 @@ int main(){
     char *puntero;
     printf("Ingrese el tamano de la palabra");
     scanf("%i", &tamano);
-    puntero = malloc(tamano*sizeof(char));
+    puntero = malloc(tamano*sizeof(char)+1);
     fflush(stdin);
     printf("Ingrese la palabra");
     gets(puntero);
