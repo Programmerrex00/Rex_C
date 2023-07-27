@@ -72,7 +72,7 @@ int cantidadNodos(){
     }
     return cantidad;
 }
-
+    
 //para retornar un valor char o 'string' en C, lo que debemos hacer es reservar dinamicamente 
 // el espacio que va a utilizar este mensaje y luego la liberamos
 char* estaVaciaONo(){

@@ -1,5 +1,8 @@
 {
     "files.associations": {
-        "stdio.h": "c"
+        "mai.h": "c",
+        "stdio.h": "c",
+        "caja_compra.h": "c",
+        "conio.h": "c"
     }
 }
