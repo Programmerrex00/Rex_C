@@ -8,7 +8,7 @@ void leer(){
     arch = fopen("datos.txt", "rt");
     if (arch == NULL)
         exit(1);
-    char caracter = fgetc(arch); // o fgets
+    char caracter = fgetc(arch); 
     while(!feof(arch)){
         printf("%c", caracter);
         caracter = fgetc(arch);

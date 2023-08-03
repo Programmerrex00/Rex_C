@@ -91,6 +91,18 @@ void listarProductos(){
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 //Funcion para registrar una venta, validando que el ID del producto exista, y ademas que
 // la cantidad solicitada sea menor al stock del producto
 void registrarVenta(){
@@ -120,6 +132,40 @@ void registrarVenta(){
     fseek(archivoAutoincremento, 0, SEEK_SET);
     fwrite(&idAcumulado, sizeof(int), 1, archivoAutoincremento);
     fclose(archivoAutoincremento);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     //para Obtener la hora y la fecha actual hacemos uso de la libreria time.h
     time_t tiempo_actual;
@@ -152,6 +198,9 @@ void registrarVenta(){
     //Abrimos el archivo productos para leerlos y verificar que el Id exista
     FILE *productos;
     productos = fopen("productoB.dat", "r+b");
+
+
+
     size_t elementos_leidos = fread(&productoObj, sizeof(tProducto), 1, productos);
 
     //Reacomodamos el puntero de producto para comenzar a leer desde el principio
@@ -244,6 +293,39 @@ void registrarVenta(){
     fclose(archVentas);
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // Factura
     printf("\n\n");
     printf("\t**************************\n");
@@ -261,8 +343,34 @@ void registrarVenta(){
     printf("-----------------------------------------\n");
     printf("\tTHANK YOU FOR SHOPPING!\n");
 
+    free(venta.productos);
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //metodo listar Ventas
 void listarVentas() {
